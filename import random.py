@@ -1,6 +1,10 @@
 import random
-num = []
+# Initialise all cells
+grid = list(range(11))
+
+# Generate a random position and place 'X' there, 3 times
 for i in range(3):
-    number = random.randint(1, 10)
-    num.append(number)
-print (num)
+    pos = random.randint(0, 10)
+    grid[pos] = 'X'
+
+print(grid)
